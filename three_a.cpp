@@ -44,4 +44,13 @@ void stack::pop()
 	else
 	cout<<"Stack is Empty !!!!"<<endl;
 }
+void stack::display()
+{
+	node *temp=top;
+	while(temp!=NULL)
+	{
+		cout<<temp->roll<<temp->name<<temp->total<<" ";
+		temp=temp->next;
+	}
+}
 
