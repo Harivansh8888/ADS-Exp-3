@@ -54,3 +54,30 @@ void stack::display()
 	}
 }
 
+int main()
+{
+	stack st;
+	int ch;
+	do
+	{
+		cout<<"Stack Options"<<endl;
+		cout<<"1. PUSH"<<endl;
+		cout<<"2. POP"<<endl;
+		cout<<"3. DISPLAY"<<endl;
+		cout<<"4. QUIT"<<endl;
+		cin>>ch;
+		switch(ch)
+		{
+			case 1:
+				st.push();
+				break;
+			case 2:
+				st.pop();
+				break;
+			case 3:
+				st.display();
+				break;
+		}
+	}
+	while(ch!=4);
+}
