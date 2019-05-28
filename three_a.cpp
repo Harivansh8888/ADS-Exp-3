@@ -19,3 +19,16 @@ class stack
 		void pop();
 		void display();
 };
+void stack::push()
+{
+	node *temp;
+	temp=new node;
+	cout<<"Enter Roll Number: "<<endl;
+	cin>>temp->roll;
+	cout<<"Enter Name: "<<endl;
+	cin>>temp->name;
+	cout<<"Enter Total Marks: "<<endl;
+	cin>>temp->total;
+	temp->next=top;
+	top=temp;
+}
