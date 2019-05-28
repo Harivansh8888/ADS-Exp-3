@@ -32,3 +32,16 @@ void stack::push()
 	temp->next=top;
 	top=temp;
 }
+void stack::pop()
+{
+	if(top!=NULL)
+	{
+		node *temp=top;
+		top=top->next;
+		cout<<temp->roll<<temp->name<<temp->total<<"Deleted"<<endl;
+		delete temp;
+	}
+	else
+	cout<<"Stack is Empty !!!!"<<endl;
+}
+
