@@ -36,4 +36,20 @@ class Complex
                  << "Imaginary : " << this->imag << endl;
         }
 };
+int main()
+{
+    Complex a, b, c, d;
  
+    cout << "Enter first complex number " << endl;
+    a.setComplex();
+    cout << "Enter second complex number " << endl;
+    b.setComplex();
+    /* Adding two complex numbers */
+    cout << "Addition of a and b    : " << endl;
+    c = a.add(b);
+    c.printComplex();
+    /* Subtracting two complex numbers */
+    cout << "Subtraction of a and b : " << endl;
+    d = a.subtract(b);
+    d.printComplex();
+} 
